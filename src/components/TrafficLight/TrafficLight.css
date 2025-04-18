@@ -1,0 +1,74 @@
+.traffic-light-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+}
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  width: 120px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.light {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px 0;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.light.active {
+  opacity: 1;
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5);
+}
+
+.light.red {
+  background-color: red;
+}
+
+.light.yellow {
+  background-color: yellow;
+}
+.light.green {
+  background-color: green;
+}
+
+control-button:hover {
+  background-color: #3367d6;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.current-light {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.current-light.red {
+  color: #ff4444;
+}
+
+.current-light.yellow {
+  color: #ffbb33;
+}
+
+.current-light.green {
+  color: #00c851;
+}
